@@ -15,6 +15,8 @@ text += "datascience or JS for web"
 print(text)
 file = open(os.path.join('test.txt'), "w")
 
+for word in text.split():
+    file.write(word+" ")
 
 file.close()
 
